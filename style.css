@@ -1,0 +1,29 @@
+/*********** Navigation Bar ************/
+#navbar {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  align-items: center;
+}
+
+#navbar-list li a {
+  color: white;
+  font-weight: 600;
+}
+
+
+/*********** Hero ************/
+#hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("images/alexander-schimmeck-yaGNDPCKC1U-unsplash.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-container {
+  color: white;
+  height: 100%;
+  flex-direction: column;
+}
