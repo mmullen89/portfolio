@@ -12,15 +12,46 @@
   align-items: center;
 }
 
+#navbar-list li {
+  padding: 0 25px;
+}
+
+#navbar-list .first-link {
+  padding-left:0px;
+}
+
+#navbar-list .last-link {
+  padding-right:0px;
+}
+
 #navbar-list li a {
-  color: white;
+  color: black;
   font-weight: 600;
+  font-size: 1.1em;
 }
 
 #navbar a:hover {
   color: #ffb727;
 }
 
+.navbar-toggler {
+  border-color: white;
+}
+
+
+.navbar-collapse{
+  background-color: white;
+}  
+
+@media (min-width: 768px) {
+  .navbar-collapse{
+  background-color: unset;
+  }
+
+  #navbar-list li a {
+    color: white;
+  }  
+}
 
 /*********** Hero ************/
 #hero {
@@ -46,7 +77,21 @@
 .inner-hero hr{
   width:400px;
   height:5px;
-  opacity: 1;
+  opacity: .90;
+}
+
+.social-icons i:hover{
+  color: #ffb727;
+}
+
+.hero-name {
+  font-family: 'Josefin Sans', serif;
+  font-size: 55px;
+}
+
+.hero-subtitle {
+  font-size: 28px;
+  font-family: 'Josefin Sans', serif;
 }
 
 /*********** About Me Section ************/
@@ -91,6 +136,10 @@
   max-width: 200px;
 }
 
+.about-description {
+  text-align: justify;
+}
+
 
 /*********** Portfolio Section ************/
 
@@ -126,8 +175,23 @@
 
 .porfolio-caption {
   text-align: center;
+  
 }
 
+.portfolio-card {
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+  box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+
+.portfolio-title {
+  font-size:1.3em;
+  font-weight: 600;
+}
+
+.portfolio-description {
+  padding: 10px 20px;
+}
 /*********** Footer Section ************/
 
 #footer {
@@ -135,6 +199,22 @@
   background-size: cover;
   text-align: center;
   padding: 80px 0;
+  margin-top:50px;
   position: relative;
   color:white;
+}
+
+.footer-signature {
+  font-size: 3.5em;
+  font-family: 'Dancing Script', cursive;
+}
+
+.footer-quote {
+  font-style:italic;
+  font-family: 'Crimson Pro', serif;
+  font-size:1.1em;
+}
+
+.copyright {
+  font-size:0.8em;
 }
